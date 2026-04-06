@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CleanTeeth.Application.Exceptions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace CleanTeeth.Application.Utilities
 {
-    public class SimplMediator : IMediator
+    public class SimpleMediator : IMediator
     {
         private readonly IServiceProvider _serviceProvider;
-        public SimplMediator(IServiceProvider serviceProvider)
+        public SimpleMediator(IServiceProvider serviceProvider)
         {
             _serviceProvider = serviceProvider;
         }
@@ -20,7 +21,7 @@ namespace CleanTeeth.Application.Utilities
             var handler = _serviceProvider.GetService(handlerType);
             if (handler == null)
             {
-                throw new InvalidOperationException($"No handler found for request of type {request.GetType()}");
+                throw new MediatorException($"No handler found for request of type {request.GetType()}");
             }
 
             var method = handlerType.GetMethod("Handle")!; 
