@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanTeeth.Tests", "CleanTe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanTeeth.Application", "CleanTeeth.Application\CleanTeeth.Application.csproj", "{9638CE49-2DF1-B4E7-8E8F-F70CE513AA0C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanTeeth.Persistance", "CleanTeeth.Persistance\CleanTeeth.Persistance.csproj", "{32AC4483-2592-4093-8994-C638447C97AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{9638CE49-2DF1-B4E7-8E8F-F70CE513AA0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9638CE49-2DF1-B4E7-8E8F-F70CE513AA0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9638CE49-2DF1-B4E7-8E8F-F70CE513AA0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32AC4483-2592-4093-8994-C638447C97AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32AC4483-2592-4093-8994-C638447C97AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32AC4483-2592-4093-8994-C638447C97AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32AC4483-2592-4093-8994-C638447C97AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +49,7 @@ Global
 		{9B624F6B-9B30-4F89-9182-67226A98A029} = {C9C2C8B7-A5B4-479C-B310-8C63821AD744}
 		{EA28BA3D-E855-4599-A742-810E439E3E49} = {D6BF5BAF-8E93-4319-A8AE-59477B1723BF}
 		{9638CE49-2DF1-B4E7-8E8F-F70CE513AA0C} = {C9C2C8B7-A5B4-479C-B310-8C63821AD744}
+		{32AC4483-2592-4093-8994-C638447C97AD} = {5EE1ED30-7896-4B31-9A66-8E26A1C5F60D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {04238DB8-CD4E-497A-AEEA-E767A57E8357}
