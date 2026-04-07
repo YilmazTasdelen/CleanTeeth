@@ -1,5 +1,7 @@
-﻿using CleanTeeth.Application.Contracts.Repositories;
+﻿using CleanTeeth.Application.Contracts.Persistence;
+using CleanTeeth.Application.Contracts.Repositories;
 using CleanTeeth.Persistance.Repository;
+using CleanTeeth.Persistance.UnitOfWork;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -20,6 +22,7 @@ namespace CleanTeeth.Persistance
                 options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 
             services.AddScoped<IDentalOfficeRepository, DentalOfficeRepository>();
+            services.AddScoped<IUnitOfWork, UnitOfWorkEFCore>();
 
             return services;
         }
