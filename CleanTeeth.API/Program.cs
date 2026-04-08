@@ -1,3 +1,4 @@
+using CleanTeeth.API.Middleware;
 using CleanTeeth.Application;
 using CleanTeeth.Persistance;
 
@@ -23,6 +24,8 @@ if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
 }
+
+app.UseCustomExceptionHandler();
 
 app.UseHttpsRedirection();
 
